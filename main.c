@@ -113,7 +113,7 @@ void insertAtEnd(){
 
 }
 
-//Insertion at a given position of the linked list
+//Insertion at a given position in the linked list
 void insertAtPosition(){
     ll *temp,*ptr;
     temp = (ll *)malloc(sizeof(ll));
@@ -150,7 +150,7 @@ void insertAtPosition(){
 
 }
 
-//Insertion after a node of the linked list
+//Insertion after a specified node in the linked list
 void insertAfterNode(){
     ll *temp,*ptr;
     temp = (ll *)malloc(sizeof(ll));
@@ -193,6 +193,7 @@ Insertion functions ends
 Deletion functions starts
 */
 
+//Deletion of node at the beginning of the linked list
 void deleteAtFirst(){
     ll *ptr;
     if(head==NULL){
@@ -207,6 +208,7 @@ void deleteAtFirst(){
     }
 }
 
+//Deletion of node at the end of the linked list
 void deleteAtLast(){
     ll *prev,*ptr;
     if(head==NULL){
@@ -234,6 +236,7 @@ void deleteAtLast(){
     }
 }
 
+//Deletion of node at a given position in the linked list
 void deleteAtPosition(){
     ll *prev,*ptr;
     if(head==NULL){
@@ -276,6 +279,7 @@ void deleteAtPosition(){
 
 }
 
+//Deletion of a specified node in the linked list
 void deleteSpecifiedNode(){
 
     ll *prev,*ptr;
