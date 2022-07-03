@@ -123,6 +123,12 @@ void insertAtPosition(){
         printf("\nOUT OF MEMORY SPACE");
         exit(0);
     }
+
+    if(head==NULL){
+        printf("\nLINKED LIST IS EMPTY\n");
+        return;
+    }
+
     int pos;
     printf("\nENTER POSITION FOR NODE INSERTION: ");
     scanf("%d",&pos);
@@ -160,18 +166,19 @@ void insertAfterNode(){
         printf("\nOUT OF MEMORY SPACE");
         exit(0);
     }
-    int nd;
-    printf("\nENTER NODE VALUE FOR NODE INSERTION: ");
-    scanf("%d",&nd);
 
-    printf("\nENTER NODE DATA: ");
-    scanf("%d",&temp->data);
-    temp->next=NULL;
     if(head==NULL){
         printf("\nLINKED LIST IS EMPTY\n");
         return;
     }
     else{
+        int nd;
+        printf("\nENTER NODE VALUE FOR NODE INSERTION: ");
+        scanf("%d",&nd);
+
+        printf("\nENTER NODE DATA: ");
+        scanf("%d",&temp->data);
+        temp->next=NULL;
         while(ptr->data!=nd){
             if(ptr->next==NULL){
               printf("\nNODE NOT FOUND!!\n");
